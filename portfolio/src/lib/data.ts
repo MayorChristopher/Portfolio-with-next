@@ -82,7 +82,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
-];
+] as const;
 
 export const skillsData = [
   "HTML",
