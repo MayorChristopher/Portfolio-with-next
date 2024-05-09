@@ -1,17 +1,29 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "../context/active-section-context";
 
 export default function Intro() {
+  const { ref, inView} = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection} = useActiveSectionContext();
+
+useEffect(()=>{
+  if (inView){
+    setActiveSection("Projects");
+  }
+}, [inView, setActiveSection]);
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -59,7 +71,7 @@ export default function Intro() {
         , also teaching them. I use several languages like{" "}
         <span className="underline">
           {" "}
-          React (Next.js), React-native, and Python.{" "}
+          React (Next.js),React-native, and Python.{" "}
         </span>
       </motion.h1>
 
