@@ -64,14 +64,13 @@ useEffect(()=>{
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello I'm Mayor Ugochukwu. </span> I'm a{" "}
-        <span className="font-bold">front-end Developer</span> with{" "}
-        <span className="font-bold">3 years + </span> experience. I love
-        developing responsive <span className="italic">web sites and apps</span>
-        , also teaching them. I use several languages like{" "}
+        <span className="font-bold">Hello, I'm Mayor Ugochukwu. </span> I'm a{" "}
+        <span className="font-bold">full-stack developer</span> with{" "}
+        <span className="font-bold">4 years</span> of experience. I love
+        building <span className="italic">web applications</span> and solving
+        real-world problems through code. My stack includes{" "}
         <span className="underline">
-          {" "}
-          React (Next.js),React-native, and Python.{" "}
+          React, Next.js, TypeScript, and Node.js.
         </span>
       </motion.h1>
 

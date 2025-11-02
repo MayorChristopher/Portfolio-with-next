@@ -35,51 +35,59 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated",
-    location: "Michael Okpara Unversity of Agriculture Umudike, Abia State, Nigeria, West Afica. ",
+    title: "Founder & Developer",
+    location: "Mayor Chris Technologies",
     description:
-      "I graduated after 4 years of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2026",
+      "Founded my own software development company. Building and developing software applications for clients using modern web technologies.",
+    icon: React.createElement(FaReact),
+    date: "Jan 2022 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "MOUAU",
+    title: "Web Development Tutor",
+    location: "Deximal Academy",
     description:
-      "I worked as a front-end developer for 3 years now. I also upskilled to the full stack, My stack includes React, Next.js, TypeScript, Tailwind  and MongoDB. I'm open to full-time opportunities.",
+      "Taught web development fundamentals including HTML, CSS, and JavaScript to students. Mentored aspiring developers.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 - till date",
+    date: "Feb 2022 - Jul 2025",
   },
   {
     title: "Laptop Engineer",
-    location: "SLOT Limited",
+    location: "SLOT Company Nigeria",
     description:
-      "I'm now a Laptop Engineer.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Certified laptop engineer providing technical support services. Diagnosed and repaired hardware/software issues.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Sep 2021 - 2022",
+  },
+  {
+    title: "Computer Science Student",
+    location: "Michael Okpara University of Agriculture, Umudike",
+    description:
+      "Currently pursuing Bachelor of Science in Computer Science. Expected graduation 2026.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2024 - 2026",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Artificial Farm",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind"],
+      "Agricultural technology platform with integrated learning management system. Features course tracking, video lessons, and user progress monitoring.",
+    tags: ["React", "JavaScript", "Supabase", "Tailwind"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "HairCare",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind"],
+      "AI-enabled hair care recommendation system that provides personalized hair care advice and product recommendations.",
+    tags: ["TypeScript", "Next.js", "React", "Tailwind"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Bank Queuing System (BQS)",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "Tailwind", "Framer"],
+      "Analytics system for bank queue management. Tracks customer flow, wait times, and service efficiency metrics.",
+    tags: ["TypeScript", "React", "Node.js"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -92,11 +100,13 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "Express",
   "Git",
+  "GitHub",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
+  "MySQL",
   "PostgreSQL",
+  "Supabase",
   "Python",
-  "Framer Motion",
+  "Vercel",
 ] as const;
