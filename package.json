@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "framer-motion": "^11.0.8",
-    "react-intersection-observer": "^9.10.2"
-  }
-}
